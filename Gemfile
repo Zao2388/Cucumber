@@ -5,3 +5,9 @@ source "https://rubygems.org"
 # gem "rails"
 gem 'cucumber'
 gem 'wrong'
+
+#development tools
+#pretty html report
+gem 'timestamped-scenarios'
+# Syntax highlingting
+gem 'syntax'
