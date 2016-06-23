@@ -1,16 +1,28 @@
 class Account
-  def initialize(amount)
+  def deposit(amount)
+    @balance = amount
+  end
+  
+  def balance
+    @balance
   end
 end
 
-Given(/^I have deposited \$(\d+) in my account$/) do |amount|
-  Account.new(amount.to_i)
+CAPTURE_A_NUMBER = Transform /^\d+$/ do |number|
+  number.to_i
 end
 
-When(/^I request \$(\d+)$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+Given /^I have deposited \$(#{CAPTURE_A_NUMBER}) in my account$/ do |amount|
+  my_account = Account.new
+  my_account.deposit(amount)
+  expect(my_account.balance).to eq(amount), 
+    "Expected the balance to be #{amount} but it was #{my_account.balance}"
 end
 
-Then(/^\$(\d+) should be dispensed$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+When /^I request \$(\d+)$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
+
+Then /^\$(\d+) should be dispensed$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
 end
