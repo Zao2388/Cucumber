@@ -1,0 +1,23 @@
+Adding example
+
+1-Show running cucumber without features.
+2-Add a feature file.
+3-Add the feature information in the file.
+4-Run cucumber. Look at the output.
+5-Use output as template for steps.
+6-Make first step pass.
+7-Use external rb file or command.
+8-Show error without file, and then with content. Show format.
+9-Make second step apss.
+10-Assertion.  Using Wrong locally and globally.
+11-Add a new feature file like substract.
+12-Fix calculator lib to work for both scenarios.
+13-Using tags.
+14-Adding scenarios outlines.
+
+Cash Slot Example
+1-Adding scenario
+2-Adding Class
+3-Seeing progress
+4-HTML format
+
