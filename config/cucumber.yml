@@ -1,0 +1,5 @@
+default: --format pretty
+#Report
+<% starttime = Time.now.strftime('%Y%m%d_%H%M%S') %>
+<% outfile_prefix = 'output' + File::SEPARATOR + 'cuke' %>
+default_report: --format pretty --format Timestamped::HtmlFormatter --out <%= outfile_prefix %>-<%= starttime %>.html
