@@ -11,5 +11,5 @@ When(/^the calculator is run again$/) do
 end
 
 Then(/^the output should be: "([^"]*)"$/) do |expected_output|
-  Wrong.assert{@output==expected_output}
+  Wrong.assert{@output.to_i==expected_output}
 end
