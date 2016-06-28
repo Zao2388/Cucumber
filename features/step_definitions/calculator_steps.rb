@@ -24,5 +24,5 @@ end
 Then(/^the output should be "([^"]*)"$/) do |expected_output|
   #@output.should == expected_output
   #expect(@output).to eq(expected_output)
-  Wrong.assert{@output==expected_output}
+  Wrong.assert{@output.to_i==expected_output}
 end

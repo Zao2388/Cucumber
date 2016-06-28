@@ -5,6 +5,7 @@ source "https://rubygems.org"
 # gem "rails"
 gem 'cucumber'
 gem 'wrong'
+gem 'byebug'
 
 #development tools
 #pretty html report
